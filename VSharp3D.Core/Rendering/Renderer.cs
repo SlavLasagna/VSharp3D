@@ -4,11 +4,11 @@ namespace VSharp3D.Core.Rendering;
 
 public sealed class Renderer : IDisposable
 {
-    private VulkanContext _vkContext;
+    private VkContext _vkContext;
 
     public Renderer(EngineWindow engineWindow)
     {
-        _vkContext = new VulkanContext(engineWindow.Window);
+        _vkContext = new VkContext(engineWindow.Window);
     }
 
     public void Render()
